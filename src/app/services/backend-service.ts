@@ -12,6 +12,6 @@ export class BackendServiceComponent {
 
    constructor( private http: HttpClient) {}
   getDataFromBackend(): Observable<any> {
-  return this.http.get('http://localhost:9003/backendCall1');
+  return this.http.get('http://localhost:9003/backendCall');
 }
 }

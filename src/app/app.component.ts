@@ -19,6 +19,7 @@ export class AppComponent {
   this.backendService.getDataFromBackend()
     .subscribe((response) => {
       console.log(response)
+      this.out = response.response;
   }, (error) =>{
       console.log("error recieved");
   });
